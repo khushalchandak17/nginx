@@ -6,7 +6,6 @@ metadata:
     run: nginx-test
   name: nginx-test
 spec:
-  replicas: 3
   containers:
   - image: nginx
     name: nginx-test
