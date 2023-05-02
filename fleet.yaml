@@ -4,14 +4,14 @@ helm:
   releaseName: nginx-all
   version: 0.1.0
 
-#targetCustomizations:
-#  - name: aws
-#    clusterGroup: aws
-#    helm:
-#      valuesFiles:
-#        - values-aws.yaml
- # - name: vsphere
-#    clusterGroup: vsphere
-#    helm:
-#      valuesFiles:
-#        - values-vsphere.yaml
+targetCustomizations:
+  - name: aws
+    clusterGroup: aws
+    helm:
+      valuesFiles:
+        - values-aws.yaml
+  - name: vsphere
+    clusterGroup: vsphere
+    helm:
+      valuesFiles:
+        - values-vsphere.yaml
